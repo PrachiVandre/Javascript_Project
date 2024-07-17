@@ -1,0 +1,245 @@
+body{
+    display: block;
+    background-color: #f7f7f7!important;
+    min-height: 100vh;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.col a:visited,
+.col a:hover{
+    text-decoration: none;
+}
+.title{
+    margin-bottom: 5vh;
+}
+.card{
+    margin: 50px auto;
+    max-width: 950px;
+    width: 90%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1rem;
+    border: transparent;
+}
+.item{
+   
+}
+.item img{
+    background-color: transparent;
+    padding: 13px;
+    border: 1px solid #e2dfdf;
+    border-radius: 6px;
+    width: 100%;
+    max-height: 350px;
+    height: 450px;
+    transition: 0.3s ease-in;
+}
+.item img:hover {
+    border:1px solid #9856b6;
+    cursor: pointer;
+}
+
+@media(max-width:767px){
+    .card{
+        margin: 3vh auto;
+    }
+}
+.cart{
+    padding: 15px;
+    background-color: #fff;
+    padding: 4vh 5vh;
+    /* border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem; */
+}
+@media(max-width:767px){
+    .cart{
+        padding: 4vh;
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 1rem;
+    }
+}
+.summary{
+    background-color: #fff;
+    /* border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem; */
+    padding-bottom: 20px;
+    padding-top: 30px;
+    color: #000
+}
+@media(max-width:767px){
+    .summary{
+    border-top-right-radius: unset;
+    border-bottom-left-radius: 1rem;
+    }
+}
+.summary .col-2{
+    padding: 0;
+}
+.summary .col-10
+{
+    padding: 0;
+}.row{
+    margin: 0;
+}
+.title b{
+    font-size: 1.5rem;
+}
+.main{
+    margin: 0;
+    padding: 2vh 0;
+    width: 100%;
+}
+.col-2, .col{
+    padding: 0 1vh;
+}
+a{
+    padding: 0 1vh;
+}
+.close{
+    margin-left: auto;
+    font-size: 0.7rem;
+}
+img{
+    width: 3.5rem;
+}
+.back-to-shop{
+    margin-top: 4.5rem;
+}
+h5{
+    margin-top: 4vh;
+}
+hr{
+    margin-top: 1.25rem;
+}
+form{
+    padding: 2vh 0;
+}
+select{
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1.5vh 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+}
+input{
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+}
+input:focus::-webkit-input-placeholder
+{
+      color:transparent;
+}
+.btn{
+    background-color: #000!important;
+    border-color: #000;
+    color: #fff!important;
+    width: 100%;
+    font-size: 0.7rem;
+    margin-top: 4vh;
+    padding: 1vh;
+    border-radius: 0;
+    font-weight: bold!important;
+}
+.btn:focus{
+    box-shadow: none;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    -webkit-box-shadow: none;
+    -webkit-user-select: none;
+    transition: none; 
+}
+.btn:hover{
+    color: white;
+}
+a{
+    color: black; 
+}
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+ #code{
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.253) , rgba(255, 255, 255, 0.185)), url("https://img.icons8.com/small/16/000000/long-arrow-right.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+}
+
+
+.price-quantity p:first-child{
+    width: 60%;
+    float: left;
+}
+
+.price-quantity p:nth-child(2){
+    width: 40%;
+    float: left;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    line-height: 35px;
+}
+
+.price-quantity p:nth-child(2) span{
+    margin: 5px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.price-quantity p:nth-child(2) span{
+    cursor: pointer;
+}
+
+.oldprice{
+    color: #cfcfcf;
+    font-size: 15px;
+    margin-right: 10px;
+}
+span.price{
+    font-size: 30px;
+    color: #9856b6;
+}
+.prod_qty{
+    position: absolute;
+    color: white;
+    top: -9px;
+    left: 16px;
+    font-weight: bold;
+    font-size: 10px;
+    background: #9856b6;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 3px;
+    
+}
+.wrapper h1{
+    padding: 50px 0;
+    font-weight: bold;
+}
+.products{
+    padding: 20px;
+}
+.empty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.empty img{
+    width: 150px;
+}
+.empty button{
+    margin: 20px;
+    background-color: transparent;
+    padding: 8px 70px;
+    color: #9856b6;
+    font-weight: bold;
+    border: 2px solid #9856b6
+}

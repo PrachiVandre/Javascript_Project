@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+</head>
+<body>
+    <div class="container_fluid">
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <!-- Navbar content -->
+            <div class="container">
+                <a class="navbar-brand" href="#" style="font-size:24px; color: #fff">Clothing Store</a>
+                <a href="cart.html">
+                    <span id="cartimg" style="position: relative;cursor: pointer;">
+                        <i class="fa fa-shopping-basket" style="font-size:24px; color: #fff"></i>
+                        <span class="prod_qty" id="prod_qty">0</span>
+                    </span>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container wrapper">
+        <h1>Best Selling Products</h1>
+        <div class="row" id="shop"></div>
+    </div>
+</div>
+  
+
+    <div class="shopping-cart" id="shopping-cart"></div>
+  </body>
+  <script src="Data.js"></script>
+<script src="script.js"></script>
+</html>
