@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+body{
+    background-color: #2b1d0f;
+    font-family: "Raleway", sans-serif;
+}
+#overlay {
+    width: 100%;
+    height: 100vh;
+    background: #060606;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    opacity: 0.8;
+    position: fixed;
+ }
+
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(223 223 184);
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+header nav h1{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+header nav form{
+    display: flex;
+    justify-content: center;
+}
+
+section h2{
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form input[type="text"] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+form input[type="text"], button[type="submit"] {
+    border: none;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 4px;
+}
+form button[type="submit"]{
+    background-color: rgb(174 193 22);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form button[type="submit"]:hover{
+    background-color: rgb(174 193 22);
+}
+.recipe-container{
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.recipe-container h3{
+    color: rgb(223 223 184);
+    font-weight: normal;
+}
+.recipe {
+    width: 300px;
+    color: #fff;
+    background: #1c140b;
+    margin: 20px;
+    border-radius: 10px;
+}
+.recipe h3{
+    color: rgb(223 223 184);
+    font-weight: bold;
+}
+.recipe .desc {
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+.recipe img{
+    width: 100%;
+}
+.desc p{
+    display: inline-block;
+}
+.recipe button{
+    background-color: rgb(174 193 22);
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 80%;
+}
+.reciepe-details{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #694c2f;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    width: 50%;
+    height: 60vh;
+    overflow-y: scroll;
+    color: #fff;
+    padding: 30px 30px;
+    line-height: 24px;
+    transition: all 0.5s ease-in-out;
+}
+
+.reciepe-details::-webkit-scrollbar {
+    width: 10px;
+  }
+   
+  .reciepe-details::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  .reciepe-details::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+.reciepe-details ul{
+    list-style-position: inside;
+    margin:20px auto;
+}
+
+.closebtn{
+    background: none;
+    border: 0;
+    right: 1rem;
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+}
+
+@media screen and (max-width: 600px){
+    header nav{
+        flex-direction: column;
+    }
+    header nav form{
+        width: 80%;
+    }
+}
+.loadingData h3{
+    color: rgb(174 193 22);
+    font-weight: bold;
+    padding: 10px;
+}
