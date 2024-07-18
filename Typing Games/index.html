@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Typing Games</h1>
+    <div class="timer" id="timer"></div>
+    <div class="container">
+        <div class="quote-display" id="quoteDisplay"></div>
+        <textarea id="quoteInput" class="quote-input" autofocus></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!-- 
+1. create DOM
+2. Fetch API content (quotes) from https://api.quotable.io/random (getRandomQuotes)
+3. create function renderNewQuotes to render the api data in DOM 
+4. then split the fetched content in <span> for single signle character
+5. Now split the textarea input text using addeventlistener input event
+6. using if else compare textarea character with quotest character, and add class 'correct' and 'incorrect'
+7. Add Timer using setInterval()
+-->
